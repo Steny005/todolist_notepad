@@ -1,0 +1,84 @@
+body {
+  background: #f3f3f3;
+  font-family: 'Patrick Hand', cursive;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.notepad {
+  background: #fffbea;
+  width: 330px;
+  padding: 20px;
+  border-left: 5px solid #e57373;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.dark {
+  background: #2c2c2c;
+  color: #f5f5f5;
+  border-left-color: #90caf9;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.input-area {
+  display: flex;
+  gap: 5px;
+}
+
+input, select {
+  flex: 1;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  outline: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #aaa;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+li.done span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.priority {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.low { background: green; }
+.medium { background: orange; }
+.high { background: red; }
+
+.clear-btn {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  background: #e57373;
+  color: white;
+  padding: 6px;
+  cursor: pointer;
+}

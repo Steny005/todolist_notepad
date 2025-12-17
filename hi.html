@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notepad To-Do</title>
+
+  <!-- Handwritten Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="notepad">
+  <div class="top-bar">
+    <span id="date"></span>
+    <button id="themeToggle">🌙</button>
+  </div>
+
+  <h2>📝 To-Do Notes</h2>
+
+  <div class="input-area">
+    <input type="text" id="taskInput" placeholder="Write something..." />
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+  </div>
+
+  <ul id="taskList"></ul>
+
+  <button class="clear-btn" onclick="clearAll()">🧹 Clear All</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
